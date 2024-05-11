@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: #5e5d5d;
+}
+.list{
+  background-color: #262626;
+  
+}
+/* navbar toggler*/
+.navbar .navbar-toggler {
+  border-color: #FEB941;
+  transition: 0.3s; 
+}
+.navbar .navbar-toggler-icon {
+  background-color:#FEB941;
+}
+.navbar .navbar-toggler:hover{
+  border-color: #DD761C;
+  transform: scale(1.1);
+}
+.navbar .navbar-toggler-icon:hover{
+  background-color: #DD761C;
+}
+/* navbar toggler*/
+
+/* navbar brand and logo*/
+.navbar-brand{
+  color: #DD761C;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+.navbar-brand img{
+  width: 35px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.navbar-brand:hover{
+  color: #ffffff;
+}
+/* navbar brand and logo*/
+
+
+/*lists of header*/
+.bar ul{
+  align-items: center;
+  justify-content: space-between;
+}
+.bar ul li a {
+  padding: 10px 10px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 3rem;
+  color:  #FEB941;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.8s;
+}
+.bar ul li a:hover{
+  background-color:#eff1f3;
+  border-radius: 10px;
+}
+.list a{
+  font-size: 25px;
+  font-weight: 500;
+}
+.list a span{
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+}
+/*lists of header*/
+
+
+/* carousel design*/
+.carousel-item {
+  transition: transform 0.7s, opacity 0.5s;
+}
+.carousel-item.active {
+  transform: scale(1); 
+  opacity: 1; 
+}
+/* carousel design*/
+
+/* services section */
+.bia {
+  font-size: 20px;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  position: relative;
+  color: black;
+}
+.header {
+  margin: auto;
+  padding: 5px;
+  background:  #DD761C;
+}
+.cards p{
+  color: #333;
+}
+.cards:hover{
+  background: #FEB941;
+  color: #fff;
+}
+/* services section */
+
+
+/* portfolio section */
+.cd p{
+  color: #333;
+}
+.cd {
+  filter: grayscale(100%);
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  border-radius: 10px;
+  box-shadow:  8px 5px 10px #848484,
+  -8px -5px 10px  #FEB941;
+}
+.cd:hover{
+  filter: grayscale(0);
+  transform:translateY(-18px);  
+}
+/* portfolio section */
+
+
+/*testimonials section*/
+.testimonial {
+  background-color: #FEB941;
+  padding: 60px;
+  border-radius: 5px;
+  margin: 10px;
+  }
+    
+.icon {
+  background-color: #848484;
+  font-size: 10px;
+  color: #fff;
+}  
+/*testimonials section*/
+
+h2{
+  text-align: center;
+  }
+hr{
+  width: 100px;
+  margin: 10px auto;
+  color:#DD761C;
+  }
+  
+h4,p{
+  text-align: center;
+  font-size: 18px;
+  margin: 7px;
+  }
+ 
+/* services page */
+.body{
+  background-color: #FEB941;
+  color: #fff;
+  }
+.body p{
+  color: black;
+}
+.body:hover {
+  background: #ffffff;
+  color: #333;
+}
+/* services page */
+
+/* pricing section */
+.single-price{
+  background: #ffffff;
+  margin-top: 20px;
+  text-align: center;
+  }
+.single-price h3{
+  margin: 0;
+  margin-top: -80px;
+  color: #333;
+  font-weight: 800;
+  }
+.single-price h4{
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  }
+.single-price h4 span.sup{
+  vertical-align: text-top;
+  font-size: 14px;
+  color: #333;
+  }
+.deal-top{
+  position: relative;
+  background: #FEB941;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 90px 34px 10px;
+  border-top: 40px solid #FEB941;
+  }
+.deal-top:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -50px;
+  width: 0;
+  height: 0;
+  border-top: 50px solid #FEB941;
+  }
+.deal-bottom{
+  padding: 56px 16px 0;
+  }
+.deal-bottom p{
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-weight: 300;
+  margin-top: 16px;
+  border-top: 1px solid #FEB941;
+  padding-top: 16px;
+  }
+.btn a{
+  display: inline-block;
+  font-size: 18px;
+  color: #333;
+  background: #FEB941;
+  padding: 8px 24px;
+  margin-top: 32px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  }
+.single-price:hover{
+  background: #FEB941;
+  }
+.single-price:hover .deal-top{
+  background: #ffffff;
+  }
+.single-price:hover .deal-top:after{
+  border-top: 50px solid #ffffff;
+  }
+.single-price:hover .btn a{
+  background: #ffffff;
+  }
+  
+  @media (max-width: 567px) {
+    .single-price {
+      padding: 20px;
+      width:280px;
+      height:55vh;
+    }
+    .single-price h3 {
+      font-size: 20px;
+    }
+    .single-price h4 {
+      font-size: 16px;
+    }
+    .single-price h4 span.sup {
+      font-size: 12px;
+    }
+    .deal-top {
+      padding: 80px 34px 10px;
+      border-top: 30px solid #FEB941;
+      
+    }
+    .deal-bottom {
+      padding: 7px 12px 5px;
+    }
+    .deal-bottom p {
+      font-size: 14px;
+    }
+    .btn a {
+      font-size: 16px;
+    }
+  }
+/* pricing section */
+
+/* contact section */
+input[type="text"],
+input[type="email"] {
+  outline: none;
+  border: 2px solid ;
+  background-color: rgba(230, 230, 230, 0.6);
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: .3s;
+  }
+ 
+input[type="text"]:focus,
+input[type="email"]:focus{
+  width: 95%; 
+  border: 2px solid #a38367 ;
+  background-color: #ebc78b;
+}
+.area{
+  outline: none;
+  border: 2px solid;
+  background-color: rgba(230, 230, 230, 0.6);
+  font-size: 1.1rem;
+  transition: .3s;
+}
+
+.area:focus{
+  width: 95%;
+  border: 2px solid #a38367 ;
+  background-color: #ebc78b;
+}
+.button{
+  background: #DD761C;
+}
+.button:hover{
+  background: #FEB941;
+}
+#map-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 5px;
+  padding-top: 56.25%;
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+/* contact section */
+
+footer{
+  background-color:  #262626;
+}
+.ft{
+  width: 100%;
+  padding: 10px 10px 5px;
+}
+.ft p{
+  font-size: 20px;
+  font-weight: 400;
+  color: #FEB941;
+}
